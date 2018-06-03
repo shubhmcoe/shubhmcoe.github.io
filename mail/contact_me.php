@@ -6,7 +6,7 @@ if(empty($_POST['name'])  		||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
 	echo "No arguments Provided!";
-	return false;
+	//return false;
    }
 	
 $name = $_POST['name'];
@@ -20,5 +20,6 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: noreply@shubhamagrawal.me\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 	
 mail($to,$email_subject,$email_body,$headers);
-return true;			
+//return true;			
+//submit and error message nahi hai
 ?>
